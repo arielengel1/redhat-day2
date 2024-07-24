@@ -1,5 +1,5 @@
 deployment:
   - name: red
     replicas: 1
-    color: red
-    weight: 5
+    color: yellow
+    weight: 20
