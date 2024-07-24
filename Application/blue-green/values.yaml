@@ -2,12 +2,12 @@ deployment:
   - name: pink
     replicas: 1
     color: pink
-    weight: 5
+    weight: 100
   - name: red
     replicas: 1
     color: red
-    weight: 20
+    weight: 100
   - name: purple
     replicas: 1
     color: purple
-    weight: 8
+    weight: 100
