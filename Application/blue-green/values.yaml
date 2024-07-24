@@ -1,8 +1,4 @@
 deployment:
-  - name: yellow
-    replicas: 1
-    color: yellow
-    weight: 40
   - name: blue
     replicas: 1
     color: blue
