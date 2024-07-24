@@ -11,3 +11,7 @@ deployment:
     replicas: 1
     color: green
     weight: 20
+  - name: red
+    replicas: 1
+    color: red
+    weight: 8
