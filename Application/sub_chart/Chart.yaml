@@ -3,8 +3,8 @@ name: workshop-test
 description: A Helm chart for Kubernetes
 type: application
 dependencies:
-  - name: redhat-day2-1.0.0
-    repository: oci://ghcr.io/arielengel1
+  - name: redhat-day2-1.0.0.tgz
+    repository: oci://ghcr.io/arielengel1/helm/
     version: "1.0.0"
     alias: deploy1
 version: 1.0.0
