@@ -10,14 +10,20 @@ service:
 
 probes:
   readiness:
-    path: /health/readiness
+    httpGet:	
+      path: /health/readiness	
+      port: 8080	
+      scheme: HTTP
     initialDelaySeconds: 1
     timeoutSeconds: 1
     periodSeconds: 10
     successThreshold: 1
     failureThreshold: 3
   livenessProbe:
-    path: /health/liveliness
+    httpGet:	
+      path: /health/liveness	
+      port: 8080	
+      scheme: HTTP
     initialDelaySeconds: 1
     timeoutSeconds: 1
     periodSeconds: 10
