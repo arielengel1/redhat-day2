@@ -5,11 +5,11 @@ type: application
 dependencies:
   - name: redhat-day2
     repository: oci://ghcr.io/arielengel1/helm
-    version: "1.0.0"
+    version: "1.0.1"
     alias: deploy1
   - name: redhat-day2
     repository: oci://ghcr.io/arielengel1/helm
-    version: "1.0.0"
+    version: "1.0.1"
     alias: deploy2
-version: 1.0.0
+version: 1.0.1
 appVersion: "1.0.0"
