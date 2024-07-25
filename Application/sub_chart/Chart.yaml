@@ -1,5 +1,5 @@
 apiVersion: v2
-name: edhat-day2-1.0.0
+name: redhat-day2-1.0.0
 description: A Helm chart for Kubernetes
 type: application
 dependencies:
