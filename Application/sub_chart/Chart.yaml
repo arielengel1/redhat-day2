@@ -3,7 +3,7 @@ name: redhat-day2-1.0.0
 description: A Helm chart for Kubernetes
 type: application
 dependencies:
-  - name: redhat-day2-1.0.0.tgz
+  - name: redhat-day2
     repository: oci://ghcr.io/arielengel1/helm
     version: "1.0.0"
     alias: deploy1
