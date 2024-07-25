@@ -4,7 +4,6 @@ metadata:
 # set your lab user name
   name: {{ .Chart.Name }}
   annotations:
-    argocd.argoproj.io/sync-wave: "0"
     configmap.hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 spec:
   replicas: {{ .Values.ReplicaNumber }}
@@ -15,8 +14,9 @@ spec:
   template:
     metadata:
       labels:
-# set your lab user name
         app: {{ .Chart.Name }}
+      annotations:
+        checksum/config: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     spec:
       volumes:
         - name: index-html
