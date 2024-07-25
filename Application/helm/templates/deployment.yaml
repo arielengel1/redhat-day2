@@ -3,8 +3,6 @@ apiVersion: apps/v1
 metadata:
 # set your lab user name
   name: {{ .Chart.Name }}
-  annotations:
-    configmap.hash: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
 spec:
   replicas: {{ .Values.ReplicaNumber }}
   selector:
@@ -16,7 +14,7 @@ spec:
       labels:
         app: {{ .Chart.Name }}
       annotations:
-        checksum/config: "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        checksum/config: "/configMap.yaml"
     spec:
       volumes:
         - name: index-html
